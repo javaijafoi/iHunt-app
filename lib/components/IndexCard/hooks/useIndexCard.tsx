@@ -1,4 +1,4 @@
-import produce from "immer";
+import { produce } from "immer";
 import { useContext } from "react";
 import { SettingsContext } from "../../../contexts/SettingsContext/SettingsContext";
 import { CharacterFactory } from "../../../domains/character/CharacterFactory";

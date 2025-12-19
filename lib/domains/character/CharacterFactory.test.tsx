@@ -1,4 +1,4 @@
-import produce from "immer";
+import { produce } from "immer";
 import { CharacterFactory } from "./CharacterFactory";
 import { DefaultTemplates } from "./DefaultTemplates";
 import { ComplexCharacter } from "./mocks/ComplexCharacter";

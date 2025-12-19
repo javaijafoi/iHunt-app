@@ -10,7 +10,7 @@ import Select from "@mui/material/Select";
 import { ThemeProvider, useTheme } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import { DataGrid, GridRowId } from "@mui/x-data-grid";
-import produce from "immer";
+import { produce } from "immer";
 import uniq from "lodash/uniq";
 import React, { useContext, useMemo, useRef, useState } from "react";
 import { previewContentEditable } from "../../components/ContentEditable/ContentEditable";

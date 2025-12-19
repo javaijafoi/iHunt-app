@@ -1,4 +1,4 @@
-import produce from "immer";
+import { produce } from "immer";
 import { useEffect, useState } from "react";
 import { Delays } from "../../../../constants/Delays";
 import { useCharacters } from "../../../../contexts/CharactersContext/CharactersContext";

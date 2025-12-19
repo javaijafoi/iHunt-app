@@ -1,4 +1,4 @@
-import produce from "immer";
+import { produce } from "immer";
 import { useState } from "react";
 import { CommandResult, IDicePoolResult } from "../../../../domains/dice/Dice";
 import { useEvent } from "../../../../hooks/useEvent/useEvent";
