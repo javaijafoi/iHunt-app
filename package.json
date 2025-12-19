@@ -1,12 +1,12 @@
 {
-  "name": "fari",
+  "name": "cassapp",
   "version": "6.3.6",
-  "description": "Fari App — The Free And Open Source VTT. License: AGPL-3.0-or-later",
+  "description": "cassApp — The Free And Open Source VTT. License: AGPL-3.0-or-later",
   "author": "René-Pier Deshaies-Gélinas",
   "license": "AGPL-3.0",
   "main": "index.js",
   "engines": {
-    "node": "^16.2.0"
+    "node": ">=24.0.0"
   },
   "scripts": {
     "ci": "npm install --force && npm run build && npm run validate",

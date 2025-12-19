@@ -153,7 +153,7 @@
                       "type": "Link",
                       "meta": {
                         "hasDisplayName": true,
-                        "helperText": "Fari content",
+                        "helperText": "cassApp content",
                         "width": 0.5
                       },
                       "value": "https://github.com/cglosser/"

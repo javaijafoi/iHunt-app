@@ -62,10 +62,10 @@ describe("/characters", () => {
 
       // save
 
-      cy.title().should("contain", "Fari App | ");
+      cy.title().should("contain", "cassApp | ");
       Fari.waitContentEditable();
       Fari.get("character-dialog.save").click();
-      cy.title().should("eq", "Luke Skywalker | Fari");
+      cy.title().should("eq", "Luke Skywalker | cassApp");
       cy.contains("Saved");
 
       // navigate away
@@ -76,7 +76,7 @@ describe("/characters", () => {
       Fari.get("my-binder.folders.characters").click();
 
       cy.contains("Luke Skywalker").click();
-      cy.title().should("eq", "Luke Skywalker | Fari");
+      cy.title().should("eq", "Luke Skywalker | cassApp");
 
       // delete
       Fari.get("page.menu.my-binder").click({ force: true });

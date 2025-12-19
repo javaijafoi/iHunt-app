@@ -105,7 +105,7 @@ function JoinAGameRoute() {
       >
         <Box pb="2rem" textAlign="center">
           <img
-            alt="Fari"
+            alt="cassApp"
             width="150px"
             src={
               theme.palette.mode === "dark"

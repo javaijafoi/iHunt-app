@@ -9,7 +9,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
 import lokalise from "../../../images/services/lokalise.png";
 import { ConditionalWrapper } from "../../components/ConditionalWrapper/ConditionalWrapper";
-import { FariToolbarMaxWidth, Page } from "../../components/Page/Page";
+import { CassAppToolbarMaxWidth, Page } from "../../components/Page/Page";
 import { PageMeta } from "../../components/PageMeta/PageMeta";
 import { useLogger } from "../../contexts/InjectionsContext/hooks/useLogger";
 import { useHighlight } from "../../hooks/useHighlight/useHighlight";
@@ -34,15 +34,6 @@ const Sponsors: Array<{ image: string; name: string; link: string }> = [
   },
 ];
 
-type IHomeRouteCard = {
-  label: string;
-  description: string;
-  ctaLabel: string;
-  icon: React.ElementType;
-  to?: string;
-  onClick?: () => void;
-};
-
 const sectionsSeparator = "4rem";
 
 export const HomeRoute: React.FC<{}> = () => {
@@ -65,10 +56,10 @@ export const HomeRoute: React.FC<{}> = () => {
       />
       <Box>
         {/* <DarkBox px="2rem" mt="-2rem" textAlign="left" linear>
-          <Box sx={{ maxWidth: FariToolbarMaxWidth, margin: "0 auto" }}>
+          <Box sx={{ maxWidth: CassAppToolbarMaxWidth, margin: "0 auto" }}>
             <Box
               component="img"
-              alt="Fari"
+              alt="cassApp"
               sx={{
                 maxWidth: "100%",
                 width: "600px",
@@ -78,7 +69,7 @@ export const HomeRoute: React.FC<{}> = () => {
           </Box>
         </DarkBox> */}
         <DarkBox linear px="2rem" mt="-2rem" pt="4rem">
-          <Box sx={{ maxWidth: FariToolbarMaxWidth, margin: "0 auto" }}>
+          <Box sx={{ maxWidth: CassAppToolbarMaxWidth, margin: "0 auto" }}>
             <Box>
               <LightBox
                 textAlign="left"
@@ -492,7 +483,7 @@ export const HomeRoute: React.FC<{}> = () => {
             letterSpacing: "-0.035em",
           }}
         >
-          <>Fari App Is No Longer Being Worked On Or Maintained.</>
+          <>cassApp Is No Longer Being Worked On Or Maintained.</>
         </Typography>
         <Typography
           variant="subtitle1"
@@ -502,8 +493,7 @@ export const HomeRoute: React.FC<{}> = () => {
             textAlign: "center",
           }}
         >
-          Fari App is currently neither under active development nor
-          maintenance.
+          cassApp is currently neither under active development nor maintenance.
           <br />
           <br />
           If any bugs come to our attention, we may address them or not
