@@ -1,10 +1,8 @@
-import banner from "../../images/cassapp/banner.png";
-import logoBlack from "../../images/cassapp/logo-black.png";
-import logoTextWhite from "../../images/cassapp/logo-text-white.png";
-import logoWhite from "../../images/cassapp/logo-white.png";
-import logoWhiteSvg from "../../images/cassapp/logo-white.svg";
-import madeByCassAppRPGsBlack from "../../images/cassapp/made-by-cassapp-rpgs-black.png";
-import madeByCassAppRPGsWhite from "../../images/cassapp/made-by-cassapp-rpgs-white.png";
+import banner from "../../images/ihunt/banner.svg";
+import logoBlack from "../../images/ihunt/logo-mark.svg";
+import logoTextWhite from "../../images/ihunt/logo-wordmark.svg";
+import logoWhite from "../../images/ihunt/logo-mark.svg";
+import logoWhiteSvg from "../../images/ihunt/logo-mark.svg";
 import accelerated from "../../images/srds/accelerated.jpg";
 import adversaryToolkit from "../../images/srds/adversary-toolkit.jpg";
 import seelieSquireAvatar from "../../images/srds/authors/seelie-squire-avatar.png";
@@ -23,8 +21,6 @@ export const Images = {
   logoBlack: logoBlack as string,
   logoWhiteSvg: logoWhiteSvg as string,
   logoTextWhite: logoTextWhite as string,
-  madeByCassAppRPGsBlack: madeByCassAppRPGsBlack as string,
-  madeByCassAppRPGsWhite: madeByCassAppRPGsWhite as string,
   banner: banner as string,
   systemToolkit: systemToolkit as string,
   adversaryToolkit: adversaryToolkit as string,
@@ -38,6 +34,4 @@ export const Images = {
   scene: scene as string,
   dials: dials as string,
   cheatSheet: cheatSheet as string,
-  successWithStyle:
-    "https://live.staticflickr.com/778/22642415098_eb0d4cae7d_b.jpg",
 };

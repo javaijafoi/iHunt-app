@@ -1,18 +1,11 @@
 import CasinoIcon from "@mui/icons-material/Casino";
-import ChatIcon from "@mui/icons-material/Chat";
 import ComputerIcon from "@mui/icons-material/Computer";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-import FiberNewIcon from "@mui/icons-material/FiberNew";
-import ForumIcon from "@mui/icons-material/Forum";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import InfoIcon from "@mui/icons-material/Info";
 import LightModeIcon from "@mui/icons-material/LightMode";
-import LocalCafeIcon from "@mui/icons-material/LocalCafe";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import StorageIcon from "@mui/icons-material/Storage";
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import TranslateIcon from "@mui/icons-material/Translate";
 import AppBar from "@mui/material/AppBar";
 import Box, { BoxProps } from "@mui/material/Box";
@@ -23,7 +16,6 @@ import Fade from "@mui/material/Fade";
 import Grid from "@mui/material/Grid";
 import Hidden from "@mui/material/Hidden";
 import IconButton from "@mui/material/IconButton";
-import Link from "@mui/material/Link";
 import Select from "@mui/material/Select";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -44,18 +36,15 @@ import {
   IPossibleLanguages,
   PossibleLanguagesNames,
 } from "../../services/internationalization/InternationalizationService";
-import { AppButtonLink, AppLink } from "../AppLink/AppLink";
-import { CannyChangelog } from "../CannyChangelog/CannyChangelog";
+import { AppLink } from "../AppLink/AppLink";
 import { CookieConsent } from "../CookieConsent/CookieConsent";
-import { Kofi } from "../Kofi/Kofi";
-import { Patreon } from "../Patreon/Patreon";
 import { ScrollToTop } from "../ScrollToTop/ScrollToTop";
 import { NavLink, NavLinkCategory } from "./NavLink";
 
 let gameIdSingleton: string | undefined = undefined;
 
-export const CassAppMaxWidth = "1920px";
-export const CassAppToolbarMaxWidth = "1280px";
+export const AppMaxWidth = "1920px";
+export const AppToolbarMaxWidth = "1280px";
 
 export enum LiveMode {
   Connecting,
@@ -120,7 +109,7 @@ export const Page: React.FC<{
             <Box
               sx={{
                 ...(props.sx || {}),
-                maxWidth: props.maxWidth ?? CassAppMaxWidth,
+                maxWidth: props.maxWidth ?? AppMaxWidth,
                 marginLeft: "auto",
                 marginRight: "auto",
                 width: "100%",
@@ -143,7 +132,6 @@ export const Page: React.FC<{
     }
     return (
       <Box
-        // TODO: https://github.com/fariapp/fari/issues/212
         displayPrint="none"
         sx={{
           paddingTop: "1rem",
@@ -157,175 +145,41 @@ export const Page: React.FC<{
             <Grid
               container
               justifyContent="space-between"
-              alignItems="center"
-              spacing={4}
-            >
-              <Grid item xs={isSmall ? 12 : undefined}>
-                <AppButtonLink
-                  to="https://farirpgs.com/discord"
-                  target="_blank"
-                  color="secondary"
-                  startIcon={<ChatIcon />}
-                >
-                  {t("home-route.sections.join-community.cta")}
-                </AppButtonLink>
-              </Grid>
-            </Grid>
-          </Box>
-          <Box py="1rem">
-            <Grid
-              container
-              justifyContent="space-between"
               spacing={4}
               alignItems="center"
             >
               <Grid item xs={isSmall ? 12 : undefined}>
-                <Typography>
-                  <Link
-                    href="https://www.netlify.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    underline="hover"
-                    color="secondary"
-                  >
-                    This site is powered by Netlify
-                  </Link>
+                <Typography variant="h6" sx={{ fontWeight: 700 }}>
+                  {t("home-route.meta.description")}
                 </Typography>
               </Grid>
               <Grid item xs={isSmall ? 12 : undefined}>
-                <Typography>
-                  <AppLink
-                    to="/changelog"
-                    underline="always"
-                    color="secondary"
-                  >{`v${env.version}`}</AppLink>
+                <Typography color="text.secondary">
+                  {t("home-route.play-offline.description")}
                 </Typography>
               </Grid>
             </Grid>
           </Box>
 
-          <Box py="1rem">
-            <Grid
-              container
-              justifyContent="space-between"
-              spacing={4}
-              alignItems="center"
-            >
-              <Grid item xs={isSmall ? 12 : undefined}>
-                <Kofi />
-              </Grid>
-
-              <Grid item>
-                <Patreon />
-              </Grid>
-            </Grid>
-          </Box>
-
-          <Grid container justifyContent="center">
-            <Grid item>
-              <a
-                href="https://cassapp.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Box
-                  component="img"
-                  alt="Made By cassApp RPGs"
-                  sx={{
-                    width: "400px",
-                    maxWidth: "100%",
-                  }}
-                  src={
-                    theme.palette.mode === "dark"
-                      ? Images.madeByCassAppRPGsWhite
-                      : Images.madeByCassAppRPGsBlack
-                  }
-                />
-              </a>
-            </Grid>
-          </Grid>
           <Grid container justifyContent="center">
             <Grid item xs>
               <Box mb=".5rem">
                 <Typography variant="caption" align="justify">
-                  The cassApp RPGs, cassApp, cassApp Games and cassApp Community
-                  logos were designed by Ron Müller.
+                  iHunt is a clean-room fork prepared for local testing. No
+                  external trackers or donation links are bundled in this build.
                 </Typography>
               </Box>
               <Box mb=".5rem">
                 <Typography variant="caption" align="justify">
-                  This site is not affiliated with Evil Hat Productions, LLC.
+                  Version {env.version} • Build {env.buildNumber} • Commit{" "}
+                  {env.hash}
                 </Typography>
               </Box>
               <Box mb=".5rem">
                 <Typography variant="caption" align="justify">
-                  This work is based on Fate Core System and Fate Accelerated
-                  Edition (found at http://www.faterpg.com/), products of Evil
-                  Hat Productions, LLC, developed, authored, and edited by
-                  Leonard Balsera, Brian Engard, Jeremy Keller, Ryan Macklin,
-                  Mike Olson, Clark Valentine, Amanda Valentine, Fred Hicks, and
-                  Rob Donoghue, and licensed for our use under the Creative
-                  Commons Attribution 3.0 Unported license
-                  (http://creativecommons.org/licenses/by/3.0/).
+                  Licenses for bundled SRDs and assets remain unchanged from
+                  their original publishers.
                 </Typography>
-              </Box>
-              <Box mb=".5rem">
-                <Typography variant="caption" align="justify">
-                  This work is based on Fate Condensed (found at
-                  http://www.faterpg.com/), a product of Evil Hat Productions,
-                  LLC, developed, authored, and edited by PK Sullivan, Lara
-                  Turner, Leonard Balsera, Fred Hicks, Richard Bellingham,
-                  Robert Hanz, Ryan Macklin, and Sophie Lagacé, and licensed for
-                  our use under the Creative Commons Attribution 3.0 Unported
-                  license (http://creativecommons.org/licenses/by/3.0/).
-                </Typography>
-              </Box>
-              <Box mb=".5rem">
-                <Typography variant="caption" align="justify">
-                  The Fate Core font is © Evil Hat Productions, LLC and is used
-                  with permission. The Four Actions icons were designed by
-                  Jeremy Keller.
-                </Typography>
-              </Box>
-              <Box mb=".5rem">
-                <Typography variant="caption" align="justify">
-                  cassApp uses icons available at{" "}
-                  <Link
-                    href="http://game-icons.net"
-                    target="_blank"
-                    rel="noreferrer"
-                    color={"secondary"}
-                    underline="hover"
-                  >
-                    http://game-icons.net
-                  </Link>{" "}
-                  and{" "}
-                  <Link
-                    href="https://icons8.com/icon/569/dice"
-                    target="_blank"
-                    color={"secondary"}
-                    rel="noreferrer"
-                    underline="hover"
-                  >
-                    Icons8
-                  </Link>
-                </Typography>
-              </Box>
-            </Grid>
-          </Grid>
-          <Grid container>
-            <Grid item>
-              <Box my=".5rem">
-                <Link
-                  href="https://www.iubenda.com/privacy-policy/97549620"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-cy="page.privacy-policy"
-                  underline="hover"
-                  color={"secondary"}
-                >
-                  {t("page.privacy-policy")}
-                </Link>
               </Box>
             </Grid>
           </Grid>
@@ -359,7 +213,7 @@ export const Page: React.FC<{
             <Toolbar
               sx={{
                 margin: "0 auto",
-                maxWidth: CassAppToolbarMaxWidth,
+                maxWidth: AppToolbarMaxWidth,
                 minHeight: "72px",
                 width: "100%",
                 padding: "0",
@@ -380,7 +234,7 @@ export const Page: React.FC<{
                     <Grid item sx={{ display: "flex" }}>
                       <Box
                         component="img"
-                        alt="cassApp"
+                        alt="iHunt"
                         sx={{
                           height: "3.5rem",
                           cursor: "pointer",
@@ -398,7 +252,7 @@ export const Page: React.FC<{
                           fontWeight: theme.typography.fontWeightBold,
                         }}
                       >
-                        cassApp{" "}
+                        iHunt{" "}
                         <Typography
                           component="span"
                           sx={{
@@ -406,7 +260,7 @@ export const Page: React.FC<{
                             fontWeight: theme.typography.fontWeightRegular,
                           }}
                         >
-                          App
+                          Toolkit
                         </Typography>
                       </Typography>
                     </Grid>
@@ -454,13 +308,6 @@ export const Page: React.FC<{
                   flex: "1 1 auto",
                 }}
               />
-              <Hidden mdDown>
-                {!shouldDisplayRejoinButton && (
-                  <Box width="250px">
-                    <Patreon />
-                  </Box>
-                )}
-              </Hidden>
               {shouldDisplayRejoinButton && (
                 <ThemeProvider theme={highlight.highlightTheme}>
                   <Button
@@ -555,73 +402,6 @@ export const Page: React.FC<{
                 ]}
               />
             </Grid>
-            <Grid item xs={xsSize} sm={smSize} sx={itemClass}>
-              <NavLinkCategory
-                label={t("menu.resources")}
-                subNav={[
-                  {
-                    label: "cassApp",
-                    links: [
-                      {
-                        href: "https://cassapp.canny.io/changelog",
-                        label: t("menu.whats-new"),
-                        icon: <FiberNewIcon />,
-                        target: "_blank",
-                      },
-                      // {
-                      //   to: "/feature-requests",
-                      //   label: t("menu.feature-requests"),
-                      //   icon: <EmojiObjectsIcon />,
-                      // },
-                      // {
-                      //   to: "/bugs",
-                      //   label: t("menu.report-a-bug"),
-                      //   icon: <BugReportIcon />,
-                      // },
-                      {
-                        href: "https://farirpgs.com/discord",
-                        label: t("menu.discord"),
-                        icon: <ForumIcon />,
-                        target: "_blank",
-                      },
-                    ],
-                  },
-                  {
-                    label: "Documents",
-                    links: [
-                      {
-                        href: "https://fari.games/en/resources/fari-rpgs/fari-app-wiki",
-                        label: t("menu.fari-wiki"),
-                        icon: <InfoIcon />,
-                      },
-                    ],
-                  },
-                  {
-                    label: "Support",
-                    links: [
-                      {
-                        href: "https://www.patreon.com/bePatron?u=43408921",
-                        label: t("menu.patreon"),
-                        icon: <ThumbUpIcon />,
-                        target: "_blank",
-                      },
-                      {
-                        href: "https://ko-fi.com/rpdeshaies",
-                        label: t("menu.ko-fi"),
-                        icon: <LocalCafeIcon />,
-                        target: "_blank",
-                      },
-                      {
-                        href: "https://github.com/fariapp/fari",
-                        label: t("menu.github"),
-                        icon: <GitHubIcon />,
-                        target: "_blank",
-                      },
-                    ],
-                  },
-                ]}
-              />
-            </Grid>
           </>
         )}
 
@@ -702,7 +482,9 @@ export const Page: React.FC<{
               // ignore
             }}
           >
-            <CannyChangelog mobile={mobile} />
+            <AppLink to="/changelog" underline="hover" color="inherit">
+              {t("menu.whats-new")}
+            </AppLink>
           </NavLink>
         </Grid>
       </Grid>
