@@ -13,8 +13,8 @@ export const PageMeta: React.FC<{
   const propsTitle = props.title?.trim();
 
   const title = propsTitle
-    ? `${propsTitle} | Fari `
-    : `Fari App | ${t("home-route.meta.title")}`;
+    ? `${propsTitle} | cassApp `
+    : `cassApp | ${t("home-route.meta.title")}`;
   const meta = [];
 
   meta.push({

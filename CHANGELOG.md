@@ -24,7 +24,7 @@
 
 - fix: sync roll issues
 - feat: new character sheet theme editor
-  - feat: new themed sheets by Fari RPGs and Pandion Games
+  - feat: new themed sheets by cassApp RPGs and Pandion Games
   - feat: migrated data to support new themes
 - feat: new Info block
 - feat: Text Block now has Add/Remove field controls
@@ -113,20 +113,20 @@
 
 # v5.1
 
-- feat: A new binder view has replaced the previous scenes and characters drawer to offer new search and filtering features on Fari's data;
+- feat: A new binder view has replaced the previous scenes and characters drawer to offer new search and filtering features on cassApp's data;
 - feat: The scene screen user interface has been revamped to make it easier to use and understand;
 - feat: The Dice box and the Player row components have been revamped to make them easier on the eye!;
 - feat: It is now possible to move index cards inside others or to move them out of a parent card.
-- feat: Fari now includes a [Story Builder Tool](/story-builder)
-- feat: Fari now includes a [Story Dice Tool](/story-dice)
-- deps: The different technologies, libraries and framework have been updated to make sure Fari stand the test of time;
+- feat: cassApp now includes a [Story Builder Tool](/story-builder)
+- feat: cassApp now includes a [Story Dice Tool](/story-dice)
+- deps: The different technologies, libraries and framework have been updated to make sure cassApp stand the test of time;
 - feat: It is now possible to export Characters/Scenes as template. This will export them without their `id`. This means that when they are imported, they will have a new `id` assigned to them and there will no longer be conflicts and people all having the same character sheet and overriding each other's changes all the time.
 - feat: When starting a new scene, the new scene will have the same group as the previous one
-- feat: Fari will remember the last name you used when you last joined a game.
+- feat: cassApp will remember the last name you used when you last joined a game.
 - feat: The latest dice commands that you have rolled will now be saved and reused when you close and reopen the app
-- feat: If you loose connection to a game and join again, Fari will try to remap you to the original player that was in the game so that you don't have to re-assign your character sheets.
-- tech: Fari now only downloads the language you are using. This helps loading the app around 200ms faster than before.
-- tech: Devs contributing to the repo now have to use npm 7 + node 16 to run Fari locally on their machine
+- feat: If you loose connection to a game and join again, cassApp will try to remap you to the original player that was in the game so that you don't have to re-assign your character sheets.
+- tech: cassApp now only downloads the language you are using. This helps loading the app around 200ms faster than before.
+- tech: Devs contributing to the repo now have to use npm 7 + node 16 to run cassApp locally on their machine
 - tech: Session and Scene information are now splitted on the tech side of things which will make it easier to maintain in the future.
 
 **v5.1.1**
@@ -240,7 +240,7 @@
   - The latest roll commands are now displayed correctly when you open the dice menu (the little badge numbers displayed in the top right corner of each die icon)
 - fix: Display the `has played` tooltip on index cards initiative tracker. Thanks @tjbearse for this fix.
   - https://github.com/fariapp/fari/pull/256#issuecomment-816675961
-- fix: Changed the position of the floating dice box at the bottom right corner instead of bottom left to help Fari be more "Twitch friendly"
+- fix: Changed the position of the floating dice box at the bottom right corner instead of bottom left to help cassApp be more "Twitch friendly"
 - fix: Disappearing Toggles when a Text block label is empty and the advanced mode is turned off. Thanks @sleighr for the bug report.
 - fix: Non-draggable blocks if two sections have the same name. Thanks @sleighr for the bug report.
 - fix: When rolling a character sheet skill has a GM, it was always the GM that was associated with the dice roll. Thanks @JFRobillard for the bug report.
@@ -271,9 +271,9 @@ feat: new Star Wars Edge of The Empire template from @Gpoitras
 - feat: [better german translations](https://github.com/fariapp/fari/pull/283) @TecnoSmurf
 - feat: [better pr-br translations](https://github.com/fariapp/fari/pull/288) @Ruulul
 
-# v3.7 Fari Wiki, Success With Style, Image Preview, Dice Menu
+# v3.7 cassApp Wiki, Success With Style, Image Preview, Dice Menu
 
-- feat: new Fari Wiki
+- feat: new cassApp Wiki
 - feat: new Sucess with Style blog
 - feat: new image preview on content editable component
 - feat: new Dice Menu
@@ -449,7 +449,7 @@ fix: removed `showdown` markdown transformer in favor of `marked`
 - feat: character sheets can be sent to a scene.
 - feat: character sheets can be edited by it's player or the GM
 - feat: GM can draw zones in a drawing pad when playing a scene [#58](https://github.com/fariapp/fari/issues/58)
-- feat: performance and stability improvement over peer to peer communications by using a brand new _Fari Peer Server_ [#65](https://github.com/fariapp/fari/issues/65)
+- feat: performance and stability improvement over peer to peer communications by using a brand new _cassApp Peer Server_ [#65](https://github.com/fariapp/fari/issues/65)
 - fix: scene name placeholder [#59](https://github.com/fariapp/fari/issues/59)
 - feat: spanish translations [#71](https://github.com/fariapp/fari/issues/71) 👏 [Erynus](https://github.com/Erynus)
 - fix: [#76](https://github.com/fariapp/fari/issues/76)

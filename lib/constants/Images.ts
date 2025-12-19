@@ -1,10 +1,10 @@
-import banner from "../../images/fari/banner.png";
-import logoBlack from "../../images/fari/logo-black.png";
-import logoTextWhite from "../../images/fari/logo-text-white.png";
-import logoWhite from "../../images/fari/logo-white.png";
-import logoWhiteSvg from "../../images/fari/logo-white.svg";
-import madeByFariRPGsBlack from "../../images/fari/made-by-fari-rpgs-black.png";
-import madeByFariRPGsWhite from "../../images/fari/made-by-fari-rpgs-white.png";
+import banner from "../../images/cassapp/banner.png";
+import logoBlack from "../../images/cassapp/logo-black.png";
+import logoTextWhite from "../../images/cassapp/logo-text-white.png";
+import logoWhite from "../../images/cassapp/logo-white.png";
+import logoWhiteSvg from "../../images/cassapp/logo-white.svg";
+import madeByCassAppRPGsBlack from "../../images/cassapp/made-by-cassapp-rpgs-black.png";
+import madeByCassAppRPGsWhite from "../../images/cassapp/made-by-cassapp-rpgs-white.png";
 import accelerated from "../../images/srds/accelerated.jpg";
 import adversaryToolkit from "../../images/srds/adversary-toolkit.jpg";
 import seelieSquireAvatar from "../../images/srds/authors/seelie-squire-avatar.png";
@@ -23,8 +23,8 @@ export const Images = {
   logoBlack: logoBlack as string,
   logoWhiteSvg: logoWhiteSvg as string,
   logoTextWhite: logoTextWhite as string,
-  madeByFariRPGsBlack: madeByFariRPGsBlack as string,
-  madeByFariRPGsWhite: madeByFariRPGsWhite as string,
+  madeByCassAppRPGsBlack: madeByCassAppRPGsBlack as string,
+  madeByCassAppRPGsWhite: madeByCassAppRPGsWhite as string,
   banner: banner as string,
   systemToolkit: systemToolkit as string,
   adversaryToolkit: adversaryToolkit as string,

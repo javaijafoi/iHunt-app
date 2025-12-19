@@ -102,7 +102,7 @@ export const Charge = Template.bind({});
       category: "",
       importFunction: async () =>
         import(
-          "../lib/domains/character/character-templates/Fari RPGs/Charge RPG.json"
+          "../lib/domains/character/character-templates/cassApp RPGs/Charge RPG.json"
         ),
     };
 

@@ -54,8 +54,8 @@ import { NavLink, NavLinkCategory } from "./NavLink";
 
 let gameIdSingleton: string | undefined = undefined;
 
-export const FariMaxWidth = "1920px";
-export const FariToolbarMaxWidth = "1280px";
+export const CassAppMaxWidth = "1920px";
+export const CassAppToolbarMaxWidth = "1280px";
 
 export enum LiveMode {
   Connecting,
@@ -120,7 +120,7 @@ export const Page: React.FC<{
             <Box
               sx={{
                 ...(props.sx || {}),
-                maxWidth: props.maxWidth ?? FariMaxWidth,
+                maxWidth: props.maxWidth ?? CassAppMaxWidth,
                 marginLeft: "auto",
                 marginRight: "auto",
                 width: "100%",
@@ -224,21 +224,21 @@ export const Page: React.FC<{
           <Grid container justifyContent="center">
             <Grid item>
               <a
-                href="https://farirpgs.com/"
+                href="https://cassapp.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Box
                   component="img"
-                  alt="Made By Fari RPGs"
+                  alt="Made By cassApp RPGs"
                   sx={{
                     width: "400px",
                     maxWidth: "100%",
                   }}
                   src={
                     theme.palette.mode === "dark"
-                      ? Images.madeByFariRPGsWhite
-                      : Images.madeByFariRPGsBlack
+                      ? Images.madeByCassAppRPGsWhite
+                      : Images.madeByCassAppRPGsBlack
                   }
                 />
               </a>
@@ -248,8 +248,8 @@ export const Page: React.FC<{
             <Grid item xs>
               <Box mb=".5rem">
                 <Typography variant="caption" align="justify">
-                  The Fari RPGs, Fari App, Fari Games and Fari Community logos
-                  were designed by Ron Müller.
+                  The cassApp RPGs, cassApp, cassApp Games and cassApp Community
+                  logos were designed by Ron Müller.
                 </Typography>
               </Box>
               <Box mb=".5rem">
@@ -289,7 +289,7 @@ export const Page: React.FC<{
               </Box>
               <Box mb=".5rem">
                 <Typography variant="caption" align="justify">
-                  Fari uses icons available at{" "}
+                  cassApp uses icons available at{" "}
                   <Link
                     href="http://game-icons.net"
                     target="_blank"
@@ -359,7 +359,7 @@ export const Page: React.FC<{
             <Toolbar
               sx={{
                 margin: "0 auto",
-                maxWidth: FariToolbarMaxWidth,
+                maxWidth: CassAppToolbarMaxWidth,
                 minHeight: "72px",
                 width: "100%",
                 padding: "0",
@@ -380,7 +380,7 @@ export const Page: React.FC<{
                     <Grid item sx={{ display: "flex" }}>
                       <Box
                         component="img"
-                        alt="Fari"
+                        alt="cassApp"
                         sx={{
                           height: "3.5rem",
                           cursor: "pointer",
@@ -398,7 +398,7 @@ export const Page: React.FC<{
                           fontWeight: theme.typography.fontWeightBold,
                         }}
                       >
-                        Fari{" "}
+                        cassApp{" "}
                         <Typography
                           component="span"
                           sx={{
@@ -560,10 +560,10 @@ export const Page: React.FC<{
                 label={t("menu.resources")}
                 subNav={[
                   {
-                    label: "Fari",
+                    label: "cassApp",
                     links: [
                       {
-                        href: "https://fari.canny.io/changelog",
+                        href: "https://cassapp.canny.io/changelog",
                         label: t("menu.whats-new"),
                         icon: <FiberNewIcon />,
                         target: "_blank",

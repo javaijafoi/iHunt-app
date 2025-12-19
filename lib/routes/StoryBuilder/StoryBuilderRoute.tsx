@@ -239,7 +239,7 @@ export function StoryBuilderRoute() {
                   past, or add another important relationship.
                   <br />
                   <br />
-                  So, here are all of deck of cards that Fari has so that you
+                  So, here are all of deck of cards that cassApp has so that you
                   can answer all those questions easily.
                   <br />
                   Draw as many as you like, it is free as in beer!

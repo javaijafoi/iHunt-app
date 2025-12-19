@@ -83,8 +83,8 @@ export function NewCharacterRoute() {
     <Page sx={{ paddingTop: "2rem" }}>
       {template && (
         <PageMeta
-          title={`Use the ${template?.fileName} character sheet template on Fari App`}
-          description={`Get started playing TTRPGs online with Fari App using this ${template?.fileName} template!`}
+          title={`Use the ${template?.fileName} character sheet template on cassApp`}
+          description={`Get started playing TTRPGs online with cassApp using this ${template?.fileName} template!`}
         />
       )}
       {isLoading && (

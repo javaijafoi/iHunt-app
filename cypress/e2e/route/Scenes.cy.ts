@@ -55,7 +55,7 @@ describe("/scenes", () => {
       // save
       Fari.waitContentEditable();
       Fari.get("scene.save").click();
-      cy.title().should("eq", "Ba Sing Se | Fari");
+      cy.title().should("eq", "Ba Sing Se | cassApp");
 
       // delete
       Fari.get("page.menu.my-binder").click({ force: true });
@@ -93,7 +93,7 @@ describe("/scenes", () => {
       Fari.waitContentEditable();
       Fari.get("scene.save").click();
       cy.contains("Saved");
-      cy.title().should("eq", "Lower Ring | Fari");
+      cy.title().should("eq", "Lower Ring | cassApp");
 
       // test menu
       Fari.get("page.menu.my-binder").click({ force: true });

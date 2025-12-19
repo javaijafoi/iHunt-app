@@ -39,11 +39,11 @@ export const allTemplates = Object.keys(allCharactersTemplatesFiles).reduce(
 );
 
 export const CharacterTemplates = [...allTemplates].sort((a, b) => {
-  if (a.category === "Fari RPGs" && b.category === "Fari RPGs") {
+  if (a.category === "cassApp RPGs" && b.category === "cassApp RPGs") {
     return a.fileName.length - b.fileName.length;
   }
 
-  if (a.category === "Fari RPGs") {
+  if (a.category === "cassApp RPGs") {
     return -1;
   }
 
