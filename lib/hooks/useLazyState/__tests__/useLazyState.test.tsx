@@ -1,5 +1,5 @@
 import { act, renderHook } from "@testing-library/react";
-import produce from "immer";
+import { produce } from "immer";
 import { useLazyState } from "../useLazyState";
 
 describe("useLazyState", () => {
