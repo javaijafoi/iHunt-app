@@ -9,7 +9,7 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
 import lokalise from "../../../images/services/lokalise.png";
 import { ConditionalWrapper } from "../../components/ConditionalWrapper/ConditionalWrapper";
-import { CassAppToolbarMaxWidth, Page } from "../../components/Page/Page";
+import { AppToolbarMaxWidth, Page } from "../../components/Page/Page";
 import { PageMeta } from "../../components/PageMeta/PageMeta";
 import { useLogger } from "../../contexts/InjectionsContext/hooks/useLogger";
 import { useHighlight } from "../../hooks/useHighlight/useHighlight";
@@ -56,7 +56,7 @@ export const HomeRoute: React.FC<{}> = () => {
       />
       <Box>
         {/* <DarkBox px="2rem" mt="-2rem" textAlign="left" linear>
-          <Box sx={{ maxWidth: CassAppToolbarMaxWidth, margin: "0 auto" }}>
+          <Box sx={{ maxWidth: AppToolbarMaxWidth, margin: "0 auto" }}>
             <Box
               component="img"
               alt="cassApp"
@@ -69,7 +69,7 @@ export const HomeRoute: React.FC<{}> = () => {
           </Box>
         </DarkBox> */}
         <DarkBox linear px="2rem" mt="-2rem" pt="4rem">
-          <Box sx={{ maxWidth: CassAppToolbarMaxWidth, margin: "0 auto" }}>
+          <Box sx={{ maxWidth: AppToolbarMaxWidth, margin: "0 auto" }}>
             <Box>
               <LightBox
                 textAlign="left"

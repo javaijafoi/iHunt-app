@@ -4,16 +4,11 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "outDir": "./.tsc",
     "skipLibCheck": true,
-    "lib": ["es2015", "es2016", "es2017", "ES2018", "ES2019", "dom"],
+    "lib": ["ES2021", "DOM"],
     "strict": true,
-    "plugins": [
-      {
-        "name": "typescript-tslint-plugin"
-      }
-    ],
     "types": ["vite/client", "vitest/globals"]
   },
   "include": ["lib/**/*", "stories/**/*"],

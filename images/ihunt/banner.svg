@@ -1,0 +1,18 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="iHunt banner">
+  <defs>
+    <linearGradient id="bannerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="50%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="#0b1120" />
+  <rect x="40" y="40" width="1200" height="560" rx="48" fill="url(#bannerGradient)" opacity="0.18" />
+  <g transform="translate(120 120)">
+    <rect x="0" y="0" width="200" height="200" rx="44" fill="url(#bannerGradient)" />
+    <text x="100" y="128" text-anchor="middle" font-family="'Work Sans', 'Inter', system-ui, sans-serif" font-size="104" font-weight="800" fill="#f8fafc" letter-spacing="-5">iH</text>
+  </g>
+  <text x="360" y="210" font-family="'Work Sans', 'Inter', system-ui, sans-serif" font-size="96" font-weight="800" fill="#e2e8f0" letter-spacing="-3">iHunt</text>
+  <text x="360" y="270" font-family="'Inter', system-ui, sans-serif" font-size="30" font-weight="600" fill="#cbd5e1">Independent tabletop toolkit for local testing</text>
+  <text x="360" y="320" font-family="'Inter', system-ui, sans-serif" font-size="22" font-weight="500" fill="#cbd5e1">No external tracking • No donation links • Clean, ready-to-run build</text>
+</svg>
