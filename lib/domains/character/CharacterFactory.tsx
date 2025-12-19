@@ -1,4 +1,4 @@
-import produce from "immer";
+import { produce } from "immer";
 import { getUnix } from "../dayjs/getDayJS";
 import { IDiceCommandId } from "../dice/Dice";
 import { Id } from "../Id/Id";

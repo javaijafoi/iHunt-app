@@ -1,4 +1,4 @@
-import produce from "immer";
+import { produce } from "immer";
 import { useEffect, useState } from "react";
 import { IIndexCard, IIndexCardType } from "../../../hooks/useScene/IScene";
 

@@ -1,4 +1,4 @@
-import produce from "immer";
+import { produce } from "immer";
 import isEqual from "lodash/isEqual";
 import { useContext, useEffect, useMemo, useState } from "react";
 import { useCharacters } from "../../contexts/CharactersContext/CharactersContext";

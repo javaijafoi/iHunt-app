@@ -3,7 +3,7 @@ import FormHelperText from "@mui/material/FormHelperText";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import { useTheme } from "@mui/material/styles";
-import produce from "immer";
+import { produce } from "immer";
 import React, { useContext } from "react";
 import {
   ContentEditable,
