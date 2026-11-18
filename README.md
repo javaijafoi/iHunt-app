@@ -18,7 +18,7 @@ Versão limpa e autônoma: sem serviços externos, sem links de doação e sem a
 
 ## 🧭 O que é
 
-O [Fari](https://fari.app) é uma ferramenta open source para jogar [Fate](https://www.evilhat.com/home/fate-core/) online (o código aqui ainda carrega o rebranding "cassApp" de uma versão intermediária). Este repositório é um fork mantido pelo [@javaijafoi](https://github.com/javaijafoi), usado como base de testes para mesas de #iHunt, que usa o sistema Fate. Para um celular de mentira com apps do mundo de #iHunt, veja o [iFone](https://github.com/javaijafoi/ifone), e para os outros projetos do Peter, o [portfólio](https://fantasy-portfolio-zeta.vercel.app).
+O [Fari](https://fari.app) é uma ferramenta open source para jogar [Fate](https://www.evilhat.com/home/fate-core/) online (o código aqui ainda carrega o rebranding "cassApp" de uma versão intermediária). Este repositório é um fork mantido pelo [@javaijafoi](https://github.com/javaijafoi), usado como base de testes para mesas de #iHunt, que usa o sistema Fate. Para um celular de mentira com apps do mundo de #iHunt, veja o [iFone](https://github.com/javaijafoi/ifone), e para os outros projetos do Peter, o [portfólio](https://javaijafoi.vercel.app).
 
 ## 🚀 Desenvolvimento
 
@@ -40,6 +40,25 @@ React, TypeScript, Vite, Storybook (`stories/`) e testes end-to-end com Cypress 
 ## 🤝 Contribuindo e licença
 
 Veja o [CONTRIBUTING](CONTRIBUTING.md) e o [Código de Conduta](CODE_OF_CONDUCT.md). O projeto é distribuído sob a [GNU AGPL-3.0](LICENSE), a mesma licença do projeto original.
+
+---
+
+## 🌴 Mais do Peter
+
+Este projeto faz parte do [**portfólio do Peter**](https://javaijafoi.vercel.app), uma vitrine de jogos, histórias interativas e experimentos com IA, todos no ar. Perfil no GitHub: [@javaijafoi](https://github.com/javaijafoi).
+
+| Projeto | No ar | Código |
+| --- | --- | --- |
+| **Antigravitus**: Diário de aventuras num RPG de texto, jogado por agentes de IA | [abrir](https://antigravitus.vercel.app) | [repo](https://github.com/javaijafoi/antigravitus) |
+| **Picotron Arena**: Dez modos de arcade num computador de fantasia | [abrir](https://picotron-arena.vercel.app) | [repo](https://github.com/javaijafoi/picotron-arcade) |
+| **Jogo do Davi**: Jogo para crianças aprenderem a ler e a contar | [abrir](https://jogo-davi.vercel.app) | [repo](https://github.com/javaijafoi/Jogo-davi) |
+| **Matusalém**: História interativa de mistério no Bixiga | [abrir](https://matusalem-six.vercel.app) | — |
+| **Era Vargas: O Equilibrista**: Jogo 3D de decisões sobre o Brasil de 1930 a 1945 | [abrir](https://era-vargas-seliga.vercel.app) | [repo](https://github.com/javaijafoi/era-vargas-seliga) |
+| **Pinta-Kara**: Desenhe no ar com as mãos, só com a webcam | [abrir](https://pinta-kara.vercel.app) | [repo](https://github.com/javaijafoi/pinta-kara) |
+| **Rolador**: Dados para qualquer RPG de mesa, com cara de PICO-8 | [abrir](https://rolador-javaijafoi.vercel.app) | [repo](https://github.com/javaijafoi/rolador) |
+| **iFone**: Celular de mentira para mesas de #iHunt | [abrir](https://ifone-javaijafoi.vercel.app) | [repo](https://github.com/javaijafoi/ifone) |
+| **Pico Poetry**: Poemas em pixel para sortear e compartilhar como imagem | [abrir](https://pico-poetry.vercel.app) | — |
+| **#iHunt Chronicle**: Mesa virtual para o RPG #iHunt (em pausa) | [abrir](https://ihunt-chronicle.vercel.app) | — |
 
 ---
 
